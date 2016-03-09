@@ -3,6 +3,7 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     autoprefixer = require('gulp-autoprefixer'),
     jshint = require('gulp-jshint'),
+    stylish = require('jshint-stylish'),
     sass = require('gulp-sass'),
     browserSync = require('browser-sync');
 
@@ -10,7 +11,8 @@ gulp.task('browser-sync', function() {
   browserSync({
     server: {
        baseDir: "./"
-    }
+    }, 
+    browser: 'google chrome'
   });
 });
 
@@ -20,14 +22,17 @@ gulp.task('bs-reload', function () {
 
 
 gulp.task('styles', function(){
-  gulp.src(['sass/**/*.scss'])
+  gulp.src(['sass/styles.scss'])
     .pipe(plumber({
       errorHandler: function (error) {
         console.log(error.message);
         this.emit('end');
     }}))
-    .pipe(sass())
-    .pipe(autoprefixer('last 2 versions'))
+    .pipe(sass({
+      includePaths: ['sass'],
+      onError: browserSync.notify,
+    }))
+    .pipe(autoprefixer(['last 15 versions', '> 1%'], { cascade: true }))
     .pipe(gulp.dest('css/'))
     .pipe(browserSync.reload({stream:true}))
 });
@@ -40,7 +45,7 @@ gulp.task('scripts', function(){
         this.emit('end');
     }}))
     .pipe(jshint())
-    .pipe(jshint.reporter('default'))
+    .pipe(jshint.reporter(stylish))
     .pipe(gulp.dest('js/'))
     .pipe(browserSync.reload({stream:true}))
 });
