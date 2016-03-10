@@ -944,6 +944,23 @@ header {
       background: #232323;
       color: #fff;
       font-family: 'Alegreya Sans', Sans; }
+  @media (max-width: 768px) {
+    .articles .inner-container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    .articles article {
+      width: 100%;
+      padding-bottom: 30px; }
+      .articles article:nth-last-child(2) {
+        margin-right: 0;
+        margin-left: 0; }
+      .articles article:first-child {
+        margin-right: 0; }
+      .articles article:last-child {
+        margin-left: 0; } }
 
 footer {
   background: #fff;

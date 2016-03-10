@@ -45,4 +45,25 @@
 			font-family: 'Alegreya Sans', Sans;
 		}
 	}
+
+	@media (max-width: 768px) {
+		.inner-container {
+			flex-direction: column;
+		}
+		article {
+			width: 100%;
+			padding-bottom: 30px;
+
+			&:nth-last-child(2) {
+				margin-right: 0;
+				margin-left: 0;
+			}
+			&:first-child {
+				margin-right: 0;
+			}
+			&:last-child {
+				margin-left: 0;
+			}
+		}
+	}
 }
