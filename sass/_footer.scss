@@ -55,4 +55,32 @@ footer {
 			}
 		}
 	}
+
+	@media (max-width: 1090px) {
+		.footer-left {
+			float: none;
+			text-align: center;
+			margin-bottom: 20px;
+
+			img {
+				margin: 0 auto;
+			}
+		}
+		.footer-social {
+			float: none;
+			justify-content: center;
+		}
+		.footer-bottom {
+			float: none;
+			flex-direction: column;
+			text-align: center;
+			align-items: center;
+			margin-top: 20px;
+
+			p, img {
+				margin-left: 0;
+				margin-bottom: 20px;
+			}
+		}
+	}
 }
