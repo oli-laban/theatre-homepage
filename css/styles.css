@@ -547,7 +547,7 @@ header {
           margin-top: 10px; }
     header .lower-header ul {
       margin-top: 20px; }
-      header .lower-header ul li {
+      header .lower-header ul li, header .lower-header ul li:last-child {
         margin: 0 20px;
         margin-bottom: 10px; } }
 

@@ -159,7 +159,7 @@ header {
 		.lower-header {
 			ul {
 				margin-top: 20px;
-				li {
+				li, li:last-child {
 					margin: 0 20px;
 					margin-bottom: 10px;
 				}
