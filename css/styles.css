@@ -556,7 +556,8 @@ header {
   .carousel .slide {
     height: 100%;
     background-size: cover;
-    background-position: center; }
+    background-position: center;
+    position: relative; }
   .carousel .slide-1 .button-info {
     background: #222222;
     padding-right: 10px;
@@ -586,6 +587,39 @@ header {
     font-size: 25px;
     color: #fff;
     font-weight: 300; }
+  .carousel .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none; }
+  @media (max-width: 940px) {
+    .carousel {
+      height: 400px; }
+      .carousel .slide-1 img {
+        height: 150px; }
+      .carousel .slide-1 .inner-container {
+        height: 400px; } }
+  @media (max-width: 643px) {
+    .carousel {
+      height: 350px; }
+      .carousel .slide-1 img {
+        height: 100px; }
+      .carousel .slide-1 .inner-container {
+        height: 350px; } }
+  @media (max-width: 468px) {
+    .carousel .slide-1 .inner-container {
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+                  -ms-grid-row-align: center;
+              align-items: center; }
+      .carousel .slide-1 .inner-container img, .carousel .slide-1 .inner-container p, .carousel .slide-1 .inner-container a {
+        z-index: 2; }
+    .carousel .overlay {
+      display: block; } }
 
 .find {
   background: #5F0F2C; }
