@@ -148,4 +148,51 @@
 			}
 		}
 	}
+
+	@media (max-width: 900px) {
+		.find-tickets {
+			float: none;
+			width: 100%;
+			padding-right: 0;
+			border-right: none;
+
+			.find-tickets-content {
+				.find-tickets-section {
+					width: 50%;
+					margin-right: 0;
+				}
+			}
+		}
+		.find-dates {
+			float: none;
+			width: 100%;
+			padding-left: 0;
+		}
+	}
+	@media (max-width: 510px) {
+		.find-tickets {
+			.find-tickets-content {
+				flex-direction: column;
+
+				.find-tickets-section {
+					width: 100%;
+					margin-right: 0;
+				}
+			}
+		}
+		.find-dates {
+			padding-top: 5px;
+			.select-dates-inputs {
+				flex-direction: column;
+
+				.select-date {
+					width: 100%;
+				}
+
+				p {
+					padding: 10px 0;
+				}
+			}
+		}
+	}
 }

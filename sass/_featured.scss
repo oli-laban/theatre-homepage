@@ -29,6 +29,10 @@
 				font-size: 13px;
 			}
 		}
+
+		@media (max-width: 850px) {
+			display: none;
+		}
 	}
 
 	.events {
@@ -72,6 +76,8 @@
 						margin-top: 10px;
 						color: #525252;
 						margin-bottom: 20px;
+						height: 38px;
+						overflow: hidden;
 					}
 					.event-bottom {
 						display: flex;
@@ -83,6 +89,25 @@
 			&:nth-child(n+5) {
 				width: 50%;
 				padding-top: 25px;
+			}
+		}
+		@media (max-width: 954px) {
+			.event {
+				width: 50%;
+				padding-top: 25px;
+			}
+		}
+		@media (max-width: 720px) {
+			.event {
+				&:nth-child(n+5) {
+					width: 100%;
+					padding-top: 25px;
+				}
+			}
+		}
+		@media (max-width: 500px) {
+			.event {
+				width: 100%;
 			}
 		}
 	}

@@ -747,6 +747,41 @@ header {
         .find .find-dates .find-dates-content .box-office p span a {
           color: #C09D39;
           font-size: 20px; }
+  @media (max-width: 900px) {
+    .find .find-tickets {
+      float: none;
+      width: 100%;
+      padding-right: 0;
+      border-right: none; }
+      .find .find-tickets .find-tickets-content .find-tickets-section {
+        width: 50%;
+        margin-right: 0; }
+    .find .find-dates {
+      float: none;
+      width: 100%;
+      padding-left: 0; } }
+  @media (max-width: 510px) {
+    .find .find-tickets .find-tickets-content {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .find .find-tickets .find-tickets-content .find-tickets-section {
+        width: 100%;
+        margin-right: 0; }
+    .find .find-dates {
+      padding-top: 5px; }
+      .find .find-dates .select-dates-inputs {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        .find .find-dates .select-dates-inputs .select-date {
+          width: 100%; }
+        .find .find-dates .select-dates-inputs p {
+          padding: 10px 0; } }
 
 .featured {
   background: #fff;
@@ -785,6 +820,9 @@ header {
         margin-right: 5px; }
       .featured .availability .availability-item p {
         font-size: 13px; }
+    @media (max-width: 850px) {
+      .featured .availability {
+        display: none; } }
   .featured .events {
     margin-bottom: 35px; }
     .featured .events:after {
@@ -820,7 +858,9 @@ header {
           .featured .events .event .event-card .event-info .extract {
             margin-top: 10px;
             color: #525252;
-            margin-bottom: 20px; }
+            margin-bottom: 20px;
+            height: 38px;
+            overflow: hidden; }
           .featured .events .event .event-card .event-info .event-bottom {
             display: -webkit-box;
             display: -webkit-flex;
@@ -833,6 +873,17 @@ header {
       .featured .events .event:nth-child(n+5) {
         width: 50%;
         padding-top: 25px; }
+    @media (max-width: 954px) {
+      .featured .events .event {
+        width: 50%;
+        padding-top: 25px; } }
+    @media (max-width: 720px) {
+      .featured .events .event:nth-child(n+5) {
+        width: 100%;
+        padding-top: 25px; } }
+    @media (max-width: 500px) {
+      .featured .events .event {
+        width: 100%; } }
   .featured .see-more-button {
     text-align: center; }
   .featured .see-more {
