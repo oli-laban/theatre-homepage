@@ -1,0 +1,48 @@
+.articles {
+	background: $grand-red;
+	padding: 60px 0;
+	display: flex;
+
+	.inner-container {
+		display: flex;
+	}
+
+	article {
+		//float: left;
+		width: calc(33.33% - 12px);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+
+		&:nth-last-child(2) {
+			margin-right: 8px;
+			margin-left: 8px
+		}
+		&:first-child {
+			margin-right: 8px;
+		}
+		&:last-child {
+			margin-left: 8px;
+		}
+
+		img {
+			display: block;
+			width: 100%;
+		}
+
+		p {
+			color: #fff;
+			font-size: 15px;
+			margin-top: 25px;
+			margin-bottom: 20px;
+		}
+		.read-more {
+			display: inline-block;
+			padding: 10px 15px;
+			background: #232323;
+			color: #fff;
+			font-family: 'Alegreya Sans', Sans;
+		}
+	}
+}

@@ -1,0 +1,151 @@
+.find {
+	background: $grand-red;
+
+	.inner-container {
+		@include clearfix;
+	}
+
+	h2 {
+		color: $grand-gold;
+		margin-bottom: 25px;
+
+		img {
+			height: 25px;
+			transform: translateY(3px);
+			margin-right: 10px;
+		}
+	}
+	.find-tickets {
+		width: 40%;
+		border-right: 1px solid #885568;
+		padding-top: 25px;
+		padding-bottom: 15px;
+		padding-right: 5%;
+		float: left;
+
+		.find-tickets-content {
+			display: flex;
+			flex-wrap: wrap;
+
+			.find-tickets-section {
+				width: 45%;
+				margin-right: 5%;
+				margin-bottom: 25px;
+
+				p {
+					color: #fff;
+					font-weight: 300;
+					margin-top: 0;
+					margin-bottom: 5px;
+				}
+				.find-tickets-input {
+					text-align: center;
+					font-size: 15px;
+					padding-top: 7px;
+					position: relative;
+					width: 80%;
+					background: #fff;
+					height: 25px;
+					cursor: pointer;
+
+					&:after {
+						content: "";
+						position: absolute;
+						top: 0;
+						left: 100%;
+						width: 20%;
+						height: 100%;
+						background-color: $grand-black;
+						background-image: url('../img/select-arrow.png');
+						background-repeat: no-repeat;
+						background-position: center;
+					}
+				}
+
+				&.find-tickets-submit{
+					.find-tickets-input {
+						width: 96%;
+
+						&:after {
+							width: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.find-dates {
+		float: left;
+		width: 49%;
+		padding-top: 25px;
+		padding-bottom: 15px;
+		padding-left: 5%;
+		height: 100%;
+
+		.find-dates-content {
+
+			.select-dates {
+				margin-bottom: 50px;
+
+				p {
+					color: #fff;
+					font-weight: 300;
+					margin-top: 0;
+					margin-bottom: 5px;
+				}
+				.select-dates-inputs {
+					display: flex;
+					align-items: center;
+
+					.select-date {
+						flex: 2.5;
+
+						.select-date-input {
+							text-align: center;
+							font-size: 15px;
+							padding-top: 7px;
+							position: relative;
+							width: 100%;
+							background: #fff;
+							height: 25px;
+							cursor: pointer;
+
+							&:after {
+								content: "";
+								width: 30px;
+								position: absolute;
+								top: 0;
+								right: 0;
+								bottom: 0;
+								background: url('../img/calendar-icon-grey.png');
+								background-repeat: no-repeat;
+								background-position: center;
+							}
+						}
+					}
+					p {
+						flex: 1;
+						text-align: center;
+					}
+				}
+			}
+
+			.box-office {
+				border-top: 1px solid #885568;
+
+				p {
+					margin-top: 10px;
+					color: #fff;
+					font-size: 15px;
+					margin-bottom: 19px;
+
+					span a {
+						color: $grand-gold;
+						font-size: 20px;
+					}
+				}
+			}
+		}
+	}
+}

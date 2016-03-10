@@ -1,0 +1,112 @@
+header {
+	width: 100%;
+	background: #fff;
+
+	.upper-header {
+		border-bottom: 1px solid $grand-l-grey;
+
+		img {
+			height: 93px;
+			padding-top: 20px;
+			padding-bottom: 10px;
+			margin-left: 10px;
+		}
+
+		.upper-header-left,
+		.upper-header-right {
+			float: right;
+		}
+
+		.upper-header-left {
+			padding-top: 10px;
+			margin-right: 50px;
+
+			p {
+				padding: 0 5px;
+				color: $grand-red;
+				font-size: 15px;
+				margin-bottom: 19px;
+
+				span a {
+					color: $grand-gold;
+					font-size: 20px;
+				}
+			}
+
+			.button {
+				display: block;
+				padding: 11px 35px 10px 15px;
+
+				&:after {
+					right: 15px;
+					width: 20px;
+					background-size: 19px;
+				}
+			}
+		}
+
+		.upper-header-right {
+			padding-top: 10px;
+			margin-right: 10px;
+
+			nav ul {
+				position: relative;
+			}
+			nav li {
+				display: inline-block;
+				font-size: 15px;
+				line-height: 12px;
+				padding: 0 15px;
+
+				&:first-child {
+					padding-left: 0;
+				}
+				&:nth-last-child(2) {
+					border-right: 1px solid $grand-red;
+				}
+				&:last-child {
+					padding-right: 23px;
+				}
+				&:last-child:after {
+					content: "";
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					right: 0;
+					width: 13px;
+					background: url('../img/basket-icon.png');
+					background-repeat: no-repeat;
+					background-size: 11px;
+					background-position: 0 3px;
+				}
+			}
+
+			.search-events {
+				margin-top: 35px;
+			}
+		}
+	}
+
+	.lower-header {
+		text-align: center;
+
+		ul {
+			display: inline-block;
+			margin: 14px 0;
+
+			li {
+				display: inline-block;
+				color: $grand-black;
+				margin-right: 60px;
+
+				&:last-child {
+					margin-right: 0;
+				}
+
+				a {
+					font-size: 17px;
+				}
+			}
+		}
+	}
+}

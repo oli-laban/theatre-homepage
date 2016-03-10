@@ -1,0 +1,99 @@
+.featured {
+	background: #fff;
+	padding: 25px 0 40px 0;
+
+	h2 {
+		margin-bottom: 20px;
+	}
+
+	.availability {
+		background: $grand-l-grey;
+		padding: 10px 20px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 25px;
+
+		p {
+			margin: 0;
+		}
+		.availability-item {
+			display: flex;
+			align-items: center;
+
+			img {
+				height: 25px;
+				margin-right: 5px;
+			}
+			p {
+				font-size: 13px;
+			}
+		}
+	}
+
+	.events {
+		@include clearfix;
+		margin-bottom: 35px;
+
+		.event {
+			width: 25%;
+			float: left;
+			padding-right: 10px;
+			box-sizing: border-box;
+
+			.genre {
+				display: inline-block;
+				padding: 5px 20px;
+				background: $grand-l-grey;
+				color: $grand-gold;
+				font-size: 14px;
+				margin: 0 0 10px 0;
+			}
+
+			.event-card {
+				background: $grand-l-grey;
+				padding: 7px;
+				border-bottom: 1px solid #CACCCB;
+
+				img.feature-image {
+					width: 100%;
+				}
+				.event-info {
+					padding: 10px;
+
+					h4 {
+						color: $grand-red;
+					}
+					.date {
+						margin-top: 5px;
+						margin-bottom: 15px;
+					}
+					.extract {
+						margin-top: 10px;
+						color: #525252;
+						margin-bottom: 20px;
+					}
+					.event-bottom {
+						display: flex;
+						justify-content: space-between;
+					}
+				}
+			}
+
+			&:nth-child(n+5) {
+				width: 50%;
+				padding-top: 25px;
+			}
+		}
+	}
+	.see-more-button {
+		text-align: center;
+	}
+	.see-more {
+		background: $grand-gold;
+
+		&:after {
+			background-image: url("../img/btn-arrow-gold.png");
+		}
+	}
+}

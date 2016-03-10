@@ -1,0 +1,24 @@
+.search-events {
+	position: relative;
+
+	i.search-events-icon {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 10px;
+		width: 15px;
+		background-image: url('../img/search-icon.png');
+		background-position: 0 center;
+		background-repeat: no-repeat;
+	}
+	input {
+		box-sizing: border-box;
+		width: 100%;
+		border: none;
+		background: $grand-l-grey;
+		font-weight: 300;
+		font-style: italic;
+		font-size: 15px;
+		padding: 7px 5px 5px 35px;
+	}
+}

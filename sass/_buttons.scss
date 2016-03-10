@@ -1,0 +1,19 @@
+.button {
+	position: relative;
+	background: $grand-red;
+	color: #fff;
+	padding: 9px 35px 8px 10px;
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 10px;
+		width: 15px;
+		background-image: url('../img/btn-arrow.png');
+		background-repeat: no-repeat;
+		background-size: 15px;
+		background-position: 0 10px;
+	}
+}
