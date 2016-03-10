@@ -654,7 +654,8 @@ header {
       .find .find-tickets .find-tickets-content .find-tickets-section {
         width: 45%;
         margin-right: 5%;
-        margin-bottom: 25px; }
+        margin-bottom: 25px;
+        position: relative; }
         .find .find-tickets .find-tickets-content .find-tickets-section p {
           color: #fff;
           font-weight: 300;
@@ -747,7 +748,7 @@ header {
         .find .find-dates .find-dates-content .box-office p span a {
           color: #C09D39;
           font-size: 20px; }
-  @media (max-width: 900px) {
+  @media (max-width: 1067px) {
     .find .find-tickets {
       float: none;
       width: 100%;
