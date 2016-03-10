@@ -552,7 +552,8 @@ header {
         margin-bottom: 10px; } }
 
 .carousel {
-  height: 500px; }
+  height: 500px;
+  position: relative; }
   .carousel .slide {
     height: 100%;
     background-size: cover;
@@ -595,6 +596,30 @@ header {
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     display: none; }
+  .carousel .indicators {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .carousel .indicators .indicator {
+      width: 12px;
+      height: 12px;
+      -webkit-border-radius: 6px;
+              border-radius: 6px;
+      background: #fff;
+      margin-left: 5px;
+      margin-right: 5px;
+      cursor: pointer; }
+      .carousel .indicators .indicator.active {
+        background: #C09D39; }
   @media (max-width: 940px) {
     .carousel {
       height: 400px; }
